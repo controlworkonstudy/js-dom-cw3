@@ -1,0 +1,54 @@
+body {
+  background: #202124;
+  color: #bdc1c6;
+  font-family: Open Sans, Noto Sans, Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin: 2em;
+}
+
+.range {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.range-progress {
+  height: 1em;
+  background-color: lightgreen;
+  position: absolute;
+}
+
+.range-background {
+  height: 1em;
+  background-color: gray;
+  position: absolute;
+}
+
+.range-position {
+  width: 3em;
+  height: 3em;
+  background-color: gold;
+  border-radius: 50%;
+  user-select: none;
+  position: absolute;
+}
+
+.range-progress, .range-background, .range-position {
+  cursor: pointer;
+}
+
+.range-position p {
+  top: -60px;
+  position: relative;
+  font-size: 1.5em;
+}
